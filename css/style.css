@@ -1,0 +1,200 @@
+/* Style all font awesome icons */
+.fa {
+    padding-right: 1rem;
+    font-size: 2rem;
+    width: 4rem;
+    text-align: center;
+    text-decoration: none;
+    color: #45505b
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+    font-size: 3rem;
+    color: #0563bb;
+    transition: 0.2s ease-out;
+
+}
+
+body{
+    color: #45505b;
+}
+
+.bg-grey{
+ background-color: aliceblue;
+}
+
+.bg-yellow{
+ background-color: rgb(249, 241, 231);
+}
+
+.heading-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    max-width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    columns: #45505b;
+}
+
+.social-content {
+    position: relative;
+    min-height: 3rem;
+    display: flex;
+    justify-content:center;
+}
+
+.iam {
+    color: black;
+    font-size: 25px;
+    padding: 5px;
+    font-family: sans-serif;
+}
+
+.typed{
+    color: #0563bb;
+    /* border-right: 2px solid white; */
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+/*Add custom cursor so it auto inherits font styles*/
+.typed::after {
+	content: '|';
+	display: inline;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+
+/*Removes cursor that comes with typed.js*/
+.typed-cursor{
+   opacity: 0;
+	display: none;
+}
+/*Custom cursor animation*/
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+#home{
+    min-height: 100vh;
+}
+.section-container{
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+.home-container{
+
+  /* Add the blur effect */
+  /* filter: blur(3px);
+  -webkit-filter: blur(7px); */
+  /* Full height */
+  height: 100vh;
+  max-width: 100%;
+  
+
+  /* Center and scale the image nicely */
+  object-fit: cover;
+  object-position: 50% 30%;
+  /* background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  transform: scaleX(-1);
+}
+
+.img-blur{
+    background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  bottom: -4px;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.abt-img-container{
+    width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+.side-navbar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    margin-left: -300px;
+    background-color: #100901;
+    transition: 0.5s;
+    z-index: 2;
+  }
+  
+  .nav-link:active,
+  .nav-link:focus,
+  .nav-link:hover {
+    background-color: #ffffff26;
+  }
+  
+  .my-ham {
+    transition: 0.4s;
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    z-index: 2;
+
+  }
+  
+  .active-nav {
+    margin-left: 0px;
+  }
+  
+  /* for main section */
+  .active-cont {
+    margin-left: 250px;
+  }
+  
+  #menu-btn {
+    background-color: #100901;
+    color: #fff;
+    margin-left: -62px;
+  }
+  
+  .my-container input {
+    border-radius: 2rem;
+    padding: 2px 20px;
+  }
+  
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+ #about ul{
+    padding: 0;
+    list-style: none;
+ }
+#about ul li{
+    padding: 1rem 0;
+}
+
+#about h3{
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #0563bb;
+    font-family: "Railway" sans-serif;
+}
